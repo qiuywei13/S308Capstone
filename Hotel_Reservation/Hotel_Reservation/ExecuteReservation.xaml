@@ -1,0 +1,28 @@
+﻿<Window x:Class="Hotel_Reservation.ExecuteReservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel_Reservation"
+        mc:Ignorable="d"
+        Title="ExecuteReservation" Height="322" Width="335" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lblGuestInformation" Content="Guest Information" HorizontalAlignment="Left" Margin="22,16,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblFirstName" Content="First Name:" HorizontalAlignment="Left" Margin="22,42,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLastName" Content="Last Name:" HorizontalAlignment="Left" Margin="22,68,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCreditCardType" Content="Credit Card Type:" HorizontalAlignment="Left" Margin="22,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCCNumber" Content="Credit Card Number:" HorizontalAlignment="Left" Margin="22,120,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEmail" Content="Email (Optional):" HorizontalAlignment="Left" Margin="22,194,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPhone" Content="Phone Number:" HorizontalAlignment="Left" Margin="22,168,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="97,45,0,0" TextWrapping="Wrap" Text="John" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="97,70,0,0" TextWrapping="Wrap" Text="Doe" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="23" Margin="22,146,0,0" TextWrapping="Wrap" Text="12345678123456789" VerticalAlignment="Top" Width="248"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="128,98,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Height="23" Margin="124,172,0,0" TextWrapping="Wrap" Text="(213)456-7890" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="22,220,0,0" TextWrapping="Wrap" Text="johndoe@gmail.com" VerticalAlignment="Top" Width="248"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="21,256,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+        <Button x:Name="btnReserve" Content="Reserve" HorizontalAlignment="Left" Margin="229,256,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="111,256,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

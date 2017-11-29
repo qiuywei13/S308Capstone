@@ -1,0 +1,23 @@
+﻿<Window x:Name="winNewReservation" x:Class="Hotel_Reservation.NewReservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel_Reservation"
+        mc:Ignorable="d"
+        Title="New Reservation" Height="298" Width="323" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lblRoomType" Content="Room Type:" HorizontalAlignment="Left" Margin="33,54,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNumberOfRooms" Content="Number of Rooms:" HorizontalAlignment="Left" Margin="33,85,0,0" VerticalAlignment="Top" Width="114"/>
+        <ComboBox x:Name="combNumberOfRooms" HorizontalAlignment="Left" Margin="147,89,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label x:Name="lblCheckInDate" Content="Check In Date:" HorizontalAlignment="Left" Margin="33,116,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnGetQuote" Content="Get Quote" HorizontalAlignment="Left" Margin="206,192,0,0" VerticalAlignment="Top" Width="75" Click="btnGetQuote_Click"/>
+        <Label x:Name="lblPriceTitle" Content="Price Quote" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18.667"/>
+        <ComboBox x:Name="comboRoomType" HorizontalAlignment="Left" Margin="111,54,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblCheckOut" Content="Check Out Date:" HorizontalAlignment="Left" Margin="167,116,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="33,192,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+        <DatePicker x:Name="datepickerCheckIn" HorizontalAlignment="Left" Margin="33,142,0,0" VerticalAlignment="Top" Width="114"/>
+        <DatePicker x:Name="datepickerCheckOut" HorizontalAlignment="Left" Margin="167,142,0,0" VerticalAlignment="Top" Width="114"/>
+
+    </Grid>
+</Window>

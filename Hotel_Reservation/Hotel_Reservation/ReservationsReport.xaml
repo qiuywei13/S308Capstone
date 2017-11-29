@@ -1,0 +1,27 @@
+﻿<Window x:Class="Hotel_Reservation.ReservationsReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel_Reservation"
+        mc:Ignorable="d"
+        Title="ReservationsReport" Height="410.726" Width="806.341" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,2">
+        <Label x:Name="lblCheckinRng" Content="Check In Range:" HorizontalAlignment="Left" Margin="25,21,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStartDate" Content="Start Date" HorizontalAlignment="Left" Margin="24,50,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblEndDate" Content="End Date" HorizontalAlignment="Left" Margin="215,50,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblLastName" Content="Last Name:" HorizontalAlignment="Left" Margin="29,118,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblRoomType" Content="Room Type:" HorizontalAlignment="Left" Margin="29,158,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="24" Margin="124,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Text="Smith"/>
+        <ComboBox x:Name="cbRoomType" HorizontalAlignment="Left" Margin="124,164,0,0" VerticalAlignment="Top" Width="190" SelectedIndex="0">
+            <ComboBoxItem Content="Please Select an Item"/>
+        </ComboBox>
+        <Label x:Name="lblReport" Content="Reservation Report" HorizontalAlignment="Left" Margin="402,21,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtReport" HorizontalAlignment="Left" Height="294" Margin="402,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" VerticalScrollBarVisibility="Visible" TextChanged="txtReport_TextChanged" Text="First Name: John&#xD;&#xA;Last Name: Smith&#xD;&#xA;Phone: (123) 456 -7890&#xD;&#xA;Email: john.smith@gmail.com&#xD;&#xA;Check-In Date: 11/08/2017&#xD;&#xA;Number of Nights: 3&#xD;&#xA;Room Type: One King&#xD;&#xA;Number of Rooms: 1&#xD;&#xA;Room Price: $179.00&#xD;&#xA;------------------------------------------------------------------------&#xD;&#xA;Total: $ 537.00&#xD;&#xA;&#xD;&#xA;******************************************************************************************************************************************&#xD;&#xA;&#xD;&#xA;First Name: John&#xD;&#xA;Last Name: Smith&#xD;&#xA;Phone: (123) 456 -7890&#xD;&#xA;Email: john.smith@gmail.com&#xD;&#xA;Check-In Date: 11/20/2017&#xD;&#xA;Number of Nights: 3&#xD;&#xA;Room Type: One King&#xD;&#xA;Number of Rooms: 1&#xD;&#xA;Room Price: $179.00&#xD;&#xA;------------------------------------------------------------------------&#xD;&#xA;Total: $ 537.00"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="307,242,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="218,242,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+        <DatePicker HorizontalAlignment="Left" Margin="29,78,0,0" VerticalAlignment="Top" Width="175"/>
+        <DatePicker HorizontalAlignment="Left" Margin="215,78,0,0" VerticalAlignment="Top" Width="175"/>
+
+    </Grid>
+</Window>
